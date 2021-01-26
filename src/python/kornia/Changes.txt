@@ -1,0 +1,2 @@
+Some modifications are made to kornia for faster training.
+Use git diff to see detailed changes.
