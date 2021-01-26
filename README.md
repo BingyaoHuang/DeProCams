@@ -1,9 +1,4 @@
-
-
 # DeProCams: Simultaneous Relighting, Compensation and Shape Reconstruction for Projector-Camera Systems [IEEE TVCG/VR'21] 
-<br><br>
-===
-
 <p align="center">
   <img src='doc/net.png'>
 </p>
@@ -123,7 +118,7 @@ Left is camera-captured scene, middle is DeProCams estimated normal and right is
 9. [**Optional for compensation**] Finally, project the compensated projector input images under `data_root/prj/cmp/test/` to the scene and see real compensation results. You can take advantage of compensation for appearance editing, e.g., first edit the desired effects on `data_root/cam/raw/ref/img_0003.png`, then save the edited effects to `data_root/cam/desire/frames`, afterwards compensate the desire frames, and finally project the compensation images to the scene.
 10. For more details see comments in [`train_DeProCams.py`](src/python/train_DeProCams.py).
 
-**Feel free to open an issue if you have any questions, or if you want to share other interesting DeProCams applications, e.g., recursive DeProCams like this: relight(compensate(relight(compensate(I)))) 😂**
+**Feel free to open an issue if you have any questions, or if you want to share other interesting DeProCams applications, e.g., recursive DeProCams like this: `relight(compensate(relight(compensate(I))))`😂**
 
 ----
 ## Citation
