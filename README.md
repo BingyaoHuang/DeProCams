@@ -51,7 +51,7 @@ Left is camera-captured scene, middle is DeProCams estimated normal and right is
 
 
 ## Prerequisites
-* PyTorch compatible GPU
+* PyTorch compatible GPU with CUDA 10.2
 * Python 3
 * [visdom](https://github.com/fossasia/visdom) (for visualization), recommend [installing from source](https://github.com/fossasia/visdom#setup) for better point cloud visualization.
 * [kornia](https://github.com/kornia/kornia) (for differentiable warping). We adapt [this version](https://github.com/kornia/kornia/tree/d1dedb8d37f99b752467ed4acaf4f767afbbad49) to our project for better training performance, and include it in this repository.
@@ -127,7 +127,8 @@ If you use the dataset or this code, please consider citing our work
     @article{huang2021DeProCams,
         title={DeProCams: Simultaneous Relighting, Compensation and Shape Reconstruction for Projector-Camera Systems},
         author={Bingyao Huang and Haibin Ling},
-        journal = {IEEE Transactions on Visualization and Computer Graphics (TVCG) (In press)},
+        journal = {IEEE Transactions on Visualization and Computer Graphics (TVCG)},
+        doi = {10.1109/TVCG.2021.3067771},
         year={2021}
     }
 

@@ -127,7 +127,7 @@ def trainDeProCams(model, train_data, valid_data, train_option):
     # title string of current training option
     title = optionToString(train_option)
     if train_option['plot_on']:
-        # intialize visdom figures
+        # initialize visdom figures
         vis_train_fig = None
         vis_valid_fig = None
         vis_curve_fig = vis.line(X=np.array([0]), Y=np.array([0]), name='origin',
