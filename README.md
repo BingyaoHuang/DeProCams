@@ -6,7 +6,7 @@
 ----
 
 ## Introduction
-PyTorch implementation of DeProCams ([paper][1]). Please refer to [supplementary material (~136MB)][2] and [video](https://youtu.be/mfyXdckpIf4) for more results.
+PyTorch implementation of DeProCams ([paper][1]). Please refer to [supplementary material (~136MB)][2] and [video](https://youtu.be/pQ8k4AOhwlU) for more results.
 The proposed DeProCams can simultaneously perform three spatial augmented reality (SAR) tasks with one learned model: **image-based relighting**, **projector compensation** and **depth/normal estimation**, as shown below.
 
 
