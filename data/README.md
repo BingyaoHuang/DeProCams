@@ -16,4 +16,4 @@ This folder should contain DeProCams dataset. You can download and extract our [
 We thank the anonymous reviewers for valuable and inspiring comments and suggestions.
 We thank the authors of the colorful textured sampling images. 
 
-[1]: https://bingyaohuang.github.io/DeProCams/data
+[1]: https://bingyaohuang.github.io/pub/DeProCams/data
