@@ -149,6 +149,6 @@ This software is freely available for non-profit non-commercial use, and may be 
 <!-- [1]: https://arxiv.org/pdf/2003.03040.pdf -->
 [1]: https://vision.cs.stonybrook.edu/~bingyao/pub/DeProCams
 [2]: https://vision.cs.stonybrook.edu/~bingyao/pub/DeProCams_supp
-[3]: https://bingyaohuang.github.io/pub/DeProCams/data
+[3]: https://vision.cs.stonybrook.edu/~bingyao/pub/data/DeProCams
 [4]: https://github.com/BingyaoHuang/CompenNet-plusplus
 [5]: https://github.com/BingyaoHuang/CompenNet
