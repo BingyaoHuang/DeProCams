@@ -25,7 +25,8 @@ def threshDeProCams(im, thresh=None):
         im_mask = im
 
     # find the largest contour by area then convert it to convex hull
-    im_contours, contours, hierarchy = cv.findContours(np.uint8(im_mask), cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+    # im_contours, contours, hierarchy = cv.findContours(np.uint8(im_mask), cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE) # only works for OpenCV 3.x
+    contours, hierarchy = cv.findContours(np.uint8(im_mask), cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)[-2:]  # works for OpenCV 3.x and 4.x
     max_contours = np.concatenate(contours)
     hulls = cv.convexHull(max_contours)
 
