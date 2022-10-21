@@ -1,7 +1,7 @@
 DeProCams dataset
 ===
 
-This folder should contain DeProCams dataset. You can download and extract our [dataset (~2.3GB)][1] here. 
+This folder should contain DeProCams dataset. You can download and extract our [dataset (~2.3GB)][1] here.
 
 
 ## Citation
@@ -16,5 +16,5 @@ This folder should contain DeProCams dataset. You can download and extract our [
 We thank the anonymous reviewers for valuable and inspiring comments and suggestions.
 We thank the authors of the colorful textured sampling images. 
 
-[1]: https://vision.cs.stonybrook.edu/~bingyao/pub/data/DeProCams
-<!-- [1]: https://bingyaohuang.github.io/pub/DeProCams/data -->
+<!-- [1]: https://vision.cs.stonybrook.edu/~bingyao/pub/data/DeProCams -->
+[1]: https://bingyaohuang.github.io/pub/DeProCams/data
