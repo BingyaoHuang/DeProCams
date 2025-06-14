@@ -61,36 +61,42 @@ Left is camera-captured scene, middle is DeProCams estimated normal and right is
 ## Usage
 ### 
 
-1. Clone this repo:
+1. Set up the Environment: Create a new conda environment:
+
+        conda create --name DeProCams python=3.7
+        # Activate the environment
+        conda activate DeProCams # Linux/macOS
+        activate DeProCams # Windows
+2. Clone this repo:
    
         git clone https://github.com/BingyaoHuang/DeProCams
         cd DeProCams
 
-2. Install required packages by typing
+3. Install required packages by typing
    
         pip install -r requirements.txt
 
-3. [Install visdom from source](https://github.com/fossasia/visdom#setup).
+4. [Install visdom from source](https://github.com/fossasia/visdom#setup).
    
-4. Download DeProCams [benchmark dataset][3] and extract to [`data/`](data)
+5. Download DeProCams [benchmark dataset][3] and extract to [`data/`](data)
 
-5. Start **visdom** by typing
+6. Start **visdom** by typing
 
         visdom -port 8098
 
-6. Once visdom is successfully started, visit [`http://localhost:8098`](http://localhost:8098) (train locally) or `http://serverhost:8098` (train remotely).
+7. Once visdom is successfully started, visit [`http://localhost:8098`](http://localhost:8098) (train locally) or `http://serverhost:8098` (train remotely).
    
-7. Open [`train_DeProCams.py`](src/python/train_DeProCams.py) and set which GPUs to use. An example is shown below, we use GPU 1 to train the model.
+8. Open [`train_DeProCams.py`](src/python/train_DeProCams.py) and set which GPUs to use. An example is shown below, we use GPU 1 to train the model.
    
         os.environ['CUDA_VISIBLE_DEVICES'] = '1'
         device_ids = [0]
 
-8. Run [`train_DeProCams.py`](src/python/train_DeProCams.py) to reproduce benchmark results.
+9. Run [`train_DeProCams.py`](src/python/train_DeProCams.py) to reproduce benchmark results.
 
         cd src/python
         python train_DeProCams.py
 
-9.  The training and validation results are updated in the visdom webpage during training. An example is shown below, where the 1st figure shows the training and validation loss, RMSE and SSIM curves. The 2nd and 3rd montage figures are the training and validation pictures, respectively. In each montage figure, the **1st rows are the projector input images (Ip); the 2nd rows are DeProCams inferred camera-captured projection (\hat{I}c); and the 3rd rows are real camera-captured projection (Ic), i.e., ground truth**. 
+10.  The training and validation results are updated in the visdom webpage during training. An example is shown below, where the 1st figure shows the training and validation loss, RMSE and SSIM curves. The 2nd and 3rd montage figures are the training and validation pictures, respectively. In each montage figure, the **1st rows are the projector input images (Ip); the 2nd rows are DeProCams inferred camera-captured projection (\hat{I}c); and the 3rd rows are real camera-captured projection (Ic), i.e., ground truth**. 
 <p align="center">
   <img width="800"  src='doc/training_progress.png'>
 </p>
